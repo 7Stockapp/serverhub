@@ -1,0 +1,27 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: ServerHub Repository
+Label: ServerHub
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: amd64
+Components: main
+Description: ServerHub APT repository
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE39LaZ1CaO127zcaK0PiuLn+7mYUFAmd+29wACgkQ0PiuLn+7
+mYWtARAAr9guj4tkp6NhlpXv0AOINh9vULBrH9abuObN8pRHGL2+uAvVMFcf263K
+VfyJphrckyWXcDloDrcSpIMewgaXzcdYYIjtikKREA/KulKZjb1cpjJ98eRxkwf1
+S7RifqxLH2xDxXVGYNQFAvCLTRYZv06CV2M10UQG/oxIczFYSj6+6uInBgVej/Vb
+gGNfE/+C2JuTsUiRqPqCSORiMncfgtFLiFYbqaz05J2I4pSCAkcWIhJZun5NHxjz
+S98jbPK4IrXTFOePI+5g+3/fkCuRHQexWz6jOPf+UVuNB1SaG4WeH86waBPaTqtv
+7+sx+HxQU2Qy68wGxEUNxSauKdIGy0vaDG6vLm6FeJRmsNqBOQgEySZi5oXdBPSz
+Tp1PW1iOlh8zfAcd+1k7CAAwQ8SxzCfOkZlieiETYNIsvjhOv0aiPfZ5Zjb6PSWx
+XdOdsInuU4vTXa2irBKdTKT+7vtqVRaGj7PiPv6FUcVrnxg7kqybb/J/tThA3PGY
+IwDzsdyICgR38/kHYzZTt+pChUTY8eZaqLCQ35nwCMSZ2zu9lnaMhI5kFL5LeqdZ
+/BG8RQEKqpubme69EWpuAtB6uZK4RnZzDZi3Tb2lV/zoQaa2Mc/VBLp8ZyVshdX+
+RJPvxJgSWU1HWsbfF+tPaQkKobtD+hQeSGbGfcVmJuZCr490Lxc=
+=YqJ3
+-----END PGP SIGNATURE-----

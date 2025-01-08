@@ -1,0 +1,8 @@
+Origin: ServerHub Repository
+Label: ServerHub
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: amd64
+Components: main
+Description: ServerHub APT repository
