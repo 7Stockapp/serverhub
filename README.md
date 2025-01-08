@@ -10,48 +10,80 @@ Before starting, ensure you have the following:
 
 - ✅ A Debian-based Linux distribution (e.g., Ubuntu).
 - ✅ `sudo` privileges to install packages.
-- ✅ Internet access to download the repository and GPG key.
+- ✅ Internet access to download the repository or package.
 
 ---
 
-## ⚙️ Installation Steps
+## ⚙️ Installation Methods
 
-### 1️⃣ Step 1: Download and Add the GPG Key
+You can install the **ServerHub Agent** using either of the two methods below:
 
-The GPG key ensures the authenticity of the ServerHub repository. Run the command below:
+---
+
+### Method 1: Install via Repository
+
+This is the recommended method as it ensures the package stays up-to-date.
+
+#### 1️⃣ Step 1: Download and Add the GPG Key
+
+The GPG key ensures the authenticity of the ServerHub repository. Run the following command:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/7Stockapp/serverhub/main/serverhub.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/serverhub-archive-keyring.gpg > /dev/null
 ```
 
----
+#### 2️⃣ Step 2: Verify the GPG Key Fingerprint
 
-### 2️⃣ Step 2: Verify the GPG Key Fingerprint
-
-Check if the GPG key has been added correctly:
+Verify that the GPG key has been added correctly:
 
 ```bash
 gpg --no-default-keyring --keyring /usr/share/keyrings/serverhub-archive-keyring.gpg --list-keys
 ```
 
----
+#### 3️⃣ Step 3: Add the Repository
 
-### 3️⃣ Step 3: Add the Repository
-
-Add the ServerHub repository to your system’s package list:
+Add the ServerHub repository to your system’s package sources:
 
 ```bash
 echo "deb [signed-by=/usr/share/keyrings/serverhub-archive-keyring.gpg arch=amd64] https://raw.githubusercontent.com/7Stockapp/serverhub/main/ stable main" | sudo tee /etc/apt/sources.list.d/serverhub.list
 ```
 
----
+#### 4️⃣ Step 4: Update and Install
 
-### 4️⃣ Step 4: Update and Install
-
-Update your package lists and install the **ServerHub Agent**:
+Update your package list and install the **ServerHub Agent**:
 
 ```bash
 sudo apt update && sudo apt install serverhub-agent
+```
+
+---
+
+### Method 2: Install via `.deb` Package
+
+Use this method if you prefer to manually download and install the package.
+
+#### 1️⃣ Step 1: Download the `.deb` Package
+
+Download the latest `.deb` package using `wget`:
+
+```bash
+wget https://raw.githubusercontent.com/7Stockapp/serverhub/main/serverhub-agent_1.0.0.deb
+```
+
+#### 2️⃣ Step 2: Install the Package
+
+Install the downloaded package using `dpkg`:
+
+```bash
+sudo dpkg -i serverhub-agent_1.0.0.deb
+```
+
+#### 3️⃣ Step 3: Install Missing Dependencies
+
+If there are missing dependencies, resolve them using:
+
+```bash
+sudo apt-get install -f
 ```
 
 ---
@@ -74,7 +106,7 @@ If you encounter any issues during the installation:
 
 ## 📄 License
 
-This project is licensed under the https://serverhub.dev/terms-of-use/
+This project is governed by the [Terms of Use](https://serverhub.dev/terms-of-use/). By installing and using the software, you agree to comply with these terms.
 
 ---
 
