@@ -4,7 +4,7 @@ Architecture: all
 Essential: no
 Maintainer: 7stock.app
 Depends: python3 (>= 3.8.0), python3-pip, systemd
-Filename: ./serverhub-agent_1.0.0.deb
+Filename: pool/serverhub-agent_1.0.0.deb
 Size: 3748
 MD5sum: 99178aa5c2a6361bb2d0e8448d47a676
 SHA1: 8d67524206b02a949b00acb2a1a2ea6defd5f7c4
